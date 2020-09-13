@@ -18,6 +18,8 @@
                     <%= link_to post_image_path(post_image.id) do %>
                       <i class="fa fa-map-marker"></i><%= post_image.shop_name %>
                     <% end %>
+                    <%= paginate @post_images %>
+
                   </h3>
                   <p><%= post_image.caption %></p>
                   <ul class="inline-meta">
